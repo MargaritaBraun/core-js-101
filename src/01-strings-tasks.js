@@ -229,7 +229,7 @@ function getRectangleString(width, height) {
 
   let rectangleStr = `${topleft}${horizont}${topRight}\n`;
 
-  for (let i = 0; i < height - 2; i++) {
+  for (let i = 0; i < height - 2; i += 1) {
     rectangleStr += `${vertikal}${' '.repeat(width - 2)}${vertikal}\n`;
   }
 
@@ -256,7 +256,7 @@ function getRectangleString(width, height) {
  */
 function encodeToRot13(str) {
   let encodedStr = '';
-  for (let i = 0; i < str.length; i++) {
+  for (let i = 0; i < str.length; i += 1) {
     const char = str[i];
     if (/[A-Z]/.test(char)) {
       const charCode = ((char.charCodeAt() - 65 + 13) % 26) + 65;
