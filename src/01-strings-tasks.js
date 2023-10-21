@@ -114,11 +114,13 @@ function removeLeadingAndTrailingWhitespaces(str) {
  *   'cat', 3 => 'catcatcat'
  */
 function repeatString(value, count) {
-  let str = '';
+  // let str = '';
+  /*
   for (let i = 0; i < count; i++) {
     str += value;
   }
-  return str;
+  */
+  return value.repeat(count);
 }
 
 /**
